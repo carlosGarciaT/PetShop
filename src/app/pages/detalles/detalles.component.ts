@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetallesComponent implements OnInit {
 
-  constructor() { }
+  status: string;
+
+  constructor() {
+    this.status = 'available';
+   }
 
   ngOnInit(): void {
+  }
+
+  cambioStatus(): void{
+
   }
 
 }
