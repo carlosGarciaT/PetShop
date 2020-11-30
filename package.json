@@ -18,7 +18,7 @@
     "@angular/forms": "~9.1.7",
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
-    "@angular/router": "~9.1.7",
+    "@angular/router": "~9.1.7s",
     "pet-factory": "file:../PetFactory/dist/pet-factory/pet-factory-0.0.1.tgz",
     "pet-list-library": "file:../PetListLibrary/dist/pet-list-library/pet-list-library-0.1.0.tgz",
     "prettier": "^2.2.1",
