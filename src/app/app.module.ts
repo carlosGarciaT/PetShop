@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ErrorComponent } from './shared/error/error.component';
-import { HttpClientModule } from '@angular/common/http';
 import { ContainerPetListComponent } from './pages/container-pet-list/container-pet-list.component';
 import { DetallesComponent } from './pages/detalles/detalles.component';
 import { PetListLibraryModule } from 'pet-list-library';
@@ -26,7 +25,7 @@ import { EdicionComponent } from './pages/edicion/edicion.component';
     ContainerPetFactoryComponent,
     EdicionComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, PetListLibraryModule, PetFactoryModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, PetListLibraryModule, PetFactoryModule],
   providers: [],
   bootstrap: [AppComponent]
 })
