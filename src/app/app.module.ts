@@ -7,19 +7,27 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ErrorComponent } from './shared/error/error.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContainerPetListComponent } from './pages/container-pet-list/container-pet-list.component';
+import { DetallesComponent } from './pages/detalles/detalles.component';
+import { PetListLibraryModule } from 'pet-list-library';
+import { FormsModule } from '@angular/forms';
+import { PetFactoryModule } from 'pet-factory';
+import { ContainerPetFactoryComponent } from './pages/container-pet-factory/container-pet-factory.component';
+import { EdicionComponent } from './pages/edicion/edicion.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    ContainerPetListComponent,
+    DetallesComponent,
+    ContainerPetFactoryComponent,
+    EdicionComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, PetListLibraryModule, PetFactoryModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

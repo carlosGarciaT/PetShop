@@ -6,14 +6,8 @@ import { DetallesComponent } from './detalles.component';
 import { PetListLibraryModule } from 'pet-list-library';
 import { FormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [DetallesComponent],
-  imports: [
-    CommonModule,
-    DetallesRoutingModule,
-    FormsModule,
-    PetListLibraryModule
-  ]
+  imports: [CommonModule, DetallesRoutingModule, FormsModule, PetListLibraryModule]
 })
-export class DetallesModule { }
+export class DetallesModule {}

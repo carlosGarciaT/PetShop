@@ -6,24 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edicion.component.scss']
 })
 export class EdicionComponent implements OnInit {
-
   pet: {
-    id: number,
+    id: number;
     category: {
-      id: number,
-      name: string,
-    },
-    name: string,
-    photoUrls: string[],
+      id: number;
+      name: string;
+    };
+    name: string;
+    photoUrls: string[];
     tags: [
       {
-        id: number,
-        name: string,
-      },
-    ],
-    status: string,
+        id: number;
+        name: string;
+      }
+    ];
+    status: string;
   };
-
 
   constructor() {
     const currentTimeStamp = Math.floor(Date.now() / 1000);
@@ -31,22 +29,19 @@ export class EdicionComponent implements OnInit {
       id: currentTimeStamp,
       category: {
         id: 0,
-        name: '',
+        name: ''
       },
       name: '',
       photoUrls: [],
       tags: [
         {
           id: 0,
-          name: '',
-        },
+          name: ''
+        }
       ],
-      status: 'available',
-    }
-   }
-
-  ngOnInit(): void {
+      status: 'available'
+    };
   }
 
-
+  ngOnInit(): void {}
 }
