@@ -6,18 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalles.component.scss']
 })
 export class DetallesComponent implements OnInit {
+  constructor() {}
 
-  status: string;
+  ngOnInit(): void {}
 
-  constructor() {
-    this.status = 'available';
-   }
-
-  ngOnInit(): void {
-  }
-
-  cambioStatus(): void{
-
-  }
-
+  cambioStatus(): void {}
 }

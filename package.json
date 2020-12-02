@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "format": "prettier --check \"./src/**/*.{js,ts,json,scss,html}\"",
+    "format:fix": "prettier --write \"./src/**/*.{js,ts,json,scss,html}\"",
+    "lint:fix": "ng lint --fix",
+    "lint:format:fix": "npm run format:fix && npm run lint:fix"
   },
   "private": true,
   "dependencies": {
@@ -19,8 +23,8 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7s",
-    "pet-factory": "file:../PetFactory/dist/pet-factory/pet-factory-2.0.0.tgz",
-    "pet-list-library": "file:../PetListLibrary/dist/pet-list-library/pet-list-library-2.0.1.tgz",
+    "pet-factory": "file:../PetFactory/dist/pet-factory/pet-factory-2.0.1.tgz",
+    "pet-list-library": "file:../PetListLibrary/dist/pet-list-library/pet-list-library-2.0.2.tgz",
     "prettier": "^2.2.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

@@ -1,0 +1,12 @@
+<div class="center">
+  <p>Pet's Details</p>
+  <p>
+    Estado:
+    <select [(ngModel)]="status">
+      <option value="available">Available</option>
+      <option value="pending">Pending</option>
+      <option value="sold">Sold</option>
+    </select>
+  </p>
+  <lib-petlist [status]="status"></lib-petlist>
+</div>
